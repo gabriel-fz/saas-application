@@ -7,7 +7,7 @@ class Project {
 
   get rules() {
     return {
-      team: 'required',
+      title: 'required',
     };
   }
 }
