@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
   * {
     margin: 0;
     padding: 0;
@@ -8,19 +10,21 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, #root {
-    min-height: 100%;
-  }
-
   body {
-    background: #7159c1;
+    background: #353940;
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
 
-  body, input, button {
-    color: #222;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+  html, body, #root {
+    height: 100%;
+  }
+
+
+  input, button {
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   button {
