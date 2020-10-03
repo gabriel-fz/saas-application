@@ -18,7 +18,7 @@ class SignIn extends Component {
     password: '',
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     console.log('handlesubmit');
 
@@ -28,7 +28,17 @@ class SignIn extends Component {
     signInRequest(email, password);
   };
 
-  handleInputChange = (e) => {
+  handleTest = e => {
+    e.preventDefault();
+
+    console.log('handle teste');
+
+    const { email, password } = this.state;
+
+    console.log(email, password);
+  };
+
+  handleInputChange = e => {
     console.log('handleimputchange');
     this.setState({ [e.target.name]: e.target.value });
   };
