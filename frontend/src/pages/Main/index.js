@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import api from '~/services/api';
 
-import { Title } from './styles';
+export default class Main extends Component {
+  componentDidMount() {
+    api.get('/teste');
+  }
 
-function Main() {
-  return <Title>Hello World</Title>;
+  render() {
+    return <h1>Hello</h1>;
+  }
 }
-
-export default Main;
