@@ -20,7 +20,6 @@ class SignIn extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('handlesubmit');
 
     const { email, password } = this.state;
     const { signInRequest } = this.props;
@@ -28,18 +27,7 @@ class SignIn extends Component {
     signInRequest(email, password);
   };
 
-  handleTest = e => {
-    e.preventDefault();
-
-    console.log('handle teste');
-
-    const { email, password } = this.state;
-
-    console.log(email, password);
-  };
-
   handleInputChange = e => {
-    console.log('handleimputchange');
     this.setState({ [e.target.name]: e.target.value });
   };
 
